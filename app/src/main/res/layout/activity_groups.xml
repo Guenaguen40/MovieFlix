@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupsActivity"
+    android:id="@+id/groupA"
+    android:background="@color/Blue_marine">
+
+
+
+    <TextView
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_nav_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="253dp"
+        android:text="@string/groups"
+        android:textColor="#D7FFFFFF"
+        android:textSize="50sp" />
+
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/g_movi"
+            android:layout_width="103dp"
+            android:layout_height="70dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:src="@drawable/img01"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            android:focusable="true" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/g_tv"
+            android:layout_width="99dp"
+            android:layout_height="70dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:src="@drawable/img02"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/g_seri"
+            android:layout_width="98dp"
+            android:layout_height="70dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:src="@drawable/img03"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/g_anim"
+            android:layout_width="92dp"
+            android:layout_height="70dp"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:src="@drawable/img04"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+
+            />
+
+
+    </GridLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:id="@+id/containerviwerid"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/grid"
+        android:layout_marginTop="0dp" />
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corners"
+        android:elevation="8dp"
+        app:cnb_iconSize="20dp"
+        app:cnb_menuResource="@menu/bottom_navbar_chip"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_radius="4dp"
+        app:cnb_unselectedColor="@android:color/black"
+
+        />
+
+
+</RelativeLayout>

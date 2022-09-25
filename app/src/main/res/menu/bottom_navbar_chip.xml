@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Groups_nav"
+        android:title="@string/groups"
+        android:icon="@drawable/groups"
+        app:cnb_backgroundColor="@color/Blue_marine"/>
+
+    <item android:id="@+id/Home_nav"
+        android:title="@string/home"
+        android:icon="@drawable/lounge"
+        app:cnb_backgroundColor="@color/Blue_marine"/>
+
+    <item android:id="@+id/Search_nav"
+        android:title="@string/searchhh"
+        android:icon="@drawable/search"
+        app:cnb_backgroundColor="@color/Blue_marine"/>
+
+    <item android:id="@+id/User_nav"
+        android:title="@string/profile"
+        android:icon="@drawable/user"
+        app:cnb_backgroundColor="@color/Blue_marine"
+        />
+
+</menu>
